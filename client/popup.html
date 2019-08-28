@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="assets/styles/popup.css"/>
+    <script type="text/javascript" src="assets/libs/jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="assets/scripts/parameter.js"></script>
+    <script type="text/javascript" src="assets/scripts/common.js"></script>
+    <script type="text/javascript" src="assets/scripts/popup.js"></script>
+</head>
+<body>
+
+<div class="popup-container">
+	<div class="popup-body" id="option-body">
+		<div>
+  			<span id="domainText"><!--疑似无法访问的域名/当前域名--></span>
+	  		<div id="domainUrl" style="text-align:left">
+	  			<!--<input type="checkbox"><label value="123123">adasd</label>-->
+	  		</div>
+          	<div id="add-url" class="add-url">
+				添加当前域名到科学列表
+				<span>+</span>
+			</div>
+			<div id="currentURL">
+				<div style="width:150px;float:left;" id="currentText">本站已进入规则列表</div>
+				<div style="width:37px;float:right;" id="currentDel"><img id="cur-del-img" src="assets/images/del1.png" alt="删除域名" title="删除域名"></img></div>
+			</div>
+		</div>
+		<hr/>
+		<p>运行模式</p>
+		<div class="run-model">
+			<div id="needed">智能</div>
+			<div id="always">一直</div>
+			<div id="closed">关闭</div>
+		</div>
+		<hr/>
+		<p>当前加速线路</p>
+		<div id="row-select">
+			<h3><label>线路选择</label></h3>
+			<!--<ul>
+				<li>自动选择</li>
+				<div class = "clearDiv"></div>
+			</ul>-->
+		</div>
+		<hr/>
+		<span class="personal">选项|个人中心</span>
+	</div>
+	
+	<div class="popup-body" id="row-body">
+		<div id="select-header">
+			<h3><a id="return" title="返回">&nbsp;</a><a id="refresh" title="刷新">&nbsp;</a><span>线路列表</span></h3>
+		</div>
+		<p>自动选择线路(推荐)</p>
+		<hr/>
+		<div id="auto-select">
+			<label>自动选择</label><input class="row-radio" id="auto-checkbox" type="checkbox" />
+		</div>
+		<p>手动选择线路(点击右上角刷新线路)</p>
+		<hr/>
+		<div>
+			<ul>
+				<li><label>节点1</label><input name="row-radio" class="row-radio" type="radio" /><span class="row-status">空闲</span></li>
+				<li><label>节点1</label><input name="row-radio" class="row-radio" type="radio" /><span class="row-status">空闲</span></li>
+				<li><label>节点1</label><input name="row-radio" class="row-radio" type="radio" /><span class="row-status">空闲</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+	
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+	background-color: #f5f5f5;
+	overflow-y: scroll;
+}
+a {
+  text-decoration: none;
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 380px !important;
+	/*padding-top: 30px;*/
+}
+
+.heading .main-title {
+	text-align: center;
+	font-size: 48px;
+	color: #C6371D;
+}
+
+.heading .second-title {
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #888;
+}
+
+.login-box {
+	-webkit-box-shadow: 2px 2px 10px #909090;
+	width: 350px;
+}
+
+.login-box .login-tab .tab {
+	float: left;
+	width: 174.5px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	color: #428BCA;
+	margin-bottom: 20px;
+	text-decoration: none;
+	background: #eee;
+	position: relative;
+}
+
+.login-box .login-tab .tab:hover {
+	background: white;
+}
+
+.selected {
+	cursor: default !important;
+	color: #444 !important;
+	background: white !important;
+	border-bottom: 1px solid white !important;
+}
+
+.login-form {
+	background: white;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.login-form div {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.login-form input {
+	border-radius: 2px;
+	height: 16px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border: 1px solid #ccc;
+	width: 275px;
+}
+
+.login-form button {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+	width: 313px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	color: #fff;
+	background-color: #47a447;
+}
+
+.login-form.hidden {
+	display: none;
+}
+
+.info {
+	float: right;
+	font-size: 13px;
+    color: #428bca;
+}
+
+.info.error {
+	color: red;
+}

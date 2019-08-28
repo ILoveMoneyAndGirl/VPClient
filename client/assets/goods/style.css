@@ -1,0 +1,243 @@
+body {
+  background-color: #eee;
+  overflow-y: scroll;
+  font-size: 13px;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+}
+[ng-cloak] {
+  display: none;
+}
+.container {
+  width: 800px !important;
+}
+.page h1,
+.page h2 {
+  font-family: 'Microsoft Yahei';
+  color: #D9534F;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.page p.label {
+  font-weight: normal;
+}
+.pay.index.page .modal {
+  font-family: "Microsoft Yahei";
+}
+.pay.index.page .testimony-box {
+  padding-top: 50px;
+}
+.pay.index.page .testimony-box h4 {
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.pay.index.page .testimony-box hr {
+  border-top-color: #ccc;
+}
+.pay.index.page .testimony .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+.pay.index.page .testimony .name {
+  color: #888;
+}
+.pay.index.page .testimony p {
+  margin-top: 10px;
+}
+.pay.index.page .container {
+  width: 900px !important;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  font-family: "Microsoft Yahei", "simsun";
+}
+.pay.index.page .container h1,
+.pay.index.page .container h2,
+.pay.index.page .container h3 {
+  font-family: "Microsoft Yahei", "simhei", "simsun";
+  text-align: center;
+}
+.pay.index.page .container h2 {
+  color: #444;
+  margin-top: 10px;
+}
+.pay.index.page .container .account {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #444;
+  color: white;
+  font-size: 13px;
+}
+.pay.index.page .container .plans {
+  margin-top: 50px;
+}
+.pay.index.page .container .plans .btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+}
+.pay.index.page .container .card {
+  position: relative;
+  margin: 0 -10px;
+  padding: 10px 30px;
+  display: block;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.pay.index.page .container .card.suggest {
+  position: relative;
+  padding: 20px 30px;
+  border: 3px solid #666;
+  margin: -10px -30px -30px -30px;
+  z-index: 100;
+  box-shadow: 0px 0px 10px grey;
+}
+.pay.index.page .container .card .label {
+  display: none;
+  float: right;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 5px;
+  margin-top: -10px;
+  margin-right: -20px;
+}
+.pay.index.page .container .card.suggest .label {
+  display: inline-block;
+}
+.pay.index.page .container .card h3 {
+  font-size: 14px;
+}
+.pay.index.page .container .card .price {
+  font-family: verdana;
+  display: block;
+  text-align: center;
+  font-size: 72px;
+  position: relative;
+}
+.pay.index.page .container .card .price small {
+  font-size: 18px;
+  position: absolute;
+  top: 30px;
+  margin-left: -10px;
+}
+.pay.index.page .container .card .duration {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+.pay.index.page .container .card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.pay.index.page .container .card ul li {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.pay.index.page .container .card ul li .glyphicon {
+  margin-right: 5px;
+}
+.pay.index.page .container .card ul li span {
+  border-bottom: 1px dotted #aaa;
+  cursor: help;
+}
+.pay.index.page .container .card .btn {
+  margin-bottom: 10px;
+}
+.pay.index.page .transfer.modal .transfer.btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto 0 auto;
+}
+.pay.index.page .transfer.modal .transfer.btn span {
+  display: block;
+  font-family: "Microsoft Yahei";
+}
+.pay.return.page.container {
+  padding-top: 100px;
+}
+.pay.return.page .card {
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.pay.return.page .card p {
+  margin: 0;
+}
+.pay.return.page .card .main {
+  border-radius: 10px 10px 0px 0px;
+  padding-bottom: 20px;
+}
+.pay.return.page .card .main .glyphicon {
+  margin-top: 30px;
+  font-size: 64px;
+}
+.pay.return.page .card .main h2 {
+  font-size: 18px;
+  letter-spacing: 0;
+  margin-top: -15px;
+}
+.pay.return.page .card .main p {
+  padding-top: 10px;
+}
+.pay.return.page .card .main.success {
+  background-color: #2EB256;
+  color: white;
+}
+.pay.return.page .card .main.success h1,
+.pay.return.page .card .main.success h2 {
+  color: white;
+}
+.pay.return.page .card .footer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  color: #888;
+}
+.pay.return.page .card .footer .ref-link {
+  display: block;
+  margin: 5px 0 10px 0;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.pay.return.page .card .footer em {
+  color: #BF4A40;
+  font-style: normal;
+}
+.trade-confirm.modal .faq li {
+  margin-bottom: 10px;
+}
+.trade-confirm.modal .faq li p {
+  margin: 0px;
+}
+.trade-confirm.modal .faq li .answer {
+  color: #888;
+}
+.one-more-thing {
+  font-family: "Microsoft Yahei";
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.one-more-thing em {
+  color: #D9534F;
+  font-style: normal;
+  border-bottom: 1px dashed;
+}
+.leave.modal-body li {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.restore-password.page .message {
+  margin-left: 10px;
+}
+.restore-password.page .step {
+  margin-bottom: 50px;
+}

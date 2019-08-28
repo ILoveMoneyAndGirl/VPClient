@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="assets/styles/main.css"/>
+    <link rel="stylesheet" href="assets/images/jquery.fancybox.css"/>
+    <script type="text/javascript" src="assets/libs/jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="assets/libs/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="assets/libs/md5.js"></script>
+    <script type="text/javascript" src="assets/scripts/parameter.js"></script>
+    <script type="text/javascript" src="assets/scripts/common.js"></script>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
+
+    <title>壁虎漫步——选项|个人中心</title>
+</head>
+<body>
+<div class="container">
+    <div class="nav-div">
+        <div class="nav-head">
+        	<p><span ></span></p>
+        </div>
+		<hr/>
+		<div class="nav-menu">
+			<ul>
+				<li>欢迎回来<br/><span id="userId"></span></li>
+				<li>剩余时间:&nbsp<font size="5" color="#ff0000"><span id="surplusday"></span></font></li>
+				<li><a id="domainList" href="javascript:void(0)">科学列表</a></li>
+				<li><a id="mallLink" href="javascript:void(0)">商城充值</a></li>
+				
+				<li><a id="logout" href="javascript:void(0)">退出登入</a></li>
+
+<!-- 				<li><a id="editPwdLink" href="#editPwd">修改密码</a></li>
+				<li><a id="invationLink" href="javascript:void(0)">邀请分享</a></li>
+				<li><a id="commentLink" href="javascript:void(0)">吐槽墙</a></li>
+				<li><a id="noticeLink" href="javascript:void(0)">公告</a></li>
+				<li><a id="homeLink" href="javascript:void(0)">帮助</a></li>		 -->
+			</ul>
+		</div>
+		<!-- <div class="nav-menu">
+					<ul>
+						<li><a>樄甖</a></li>
+						<li><a>(Y</a></li>
+					</ul>
+				</div> -->
+    </div>
+
+    <div class="main-div">
+    	<div class="main-container" id="domain-list">
+	    	<div class="main-head">
+	    		<p>科学上网列表<span style="display:none;" class="info">排序</span></p>
+	    	</div>
+	    	<hr/>
+	        <div class="main-body">
+	    		<div class="add-url">
+	    			<input id="addURL-text" type="text" placeholder="请输入域名，按回车添加"/><div id="addURL-btn">添加域名</div><div id="queryURL-btn">查找域名</div>
+	    			<p class="help">在访问下面的的域名时，会自动使用企鹅出墙的代理服务器，解决无法访问问题</p>
+	    		</div>
+	    		<div class="url-list">
+	    			<!--<div class="url-item">
+	    				<div class="url-container">
+	    					<div class="read-mode">
+	    						<img class="url-del" src="assets/images/del1.png" alt="删除域名" title="删除域名"></img>
+	    						<div class="url-str">1.com<span><img src="assets/images/edit.png" alt="编辑" title="编辑"></img></span></div>
+	    					</div>
+	    					<div class="edit-mode">
+	    						<div class="cancel"><img src="assets/images/block.png"/></div>
+	    						<div class="modify"><img src="assets/images/check.png"/></div>
+	    						<input class="url-text" type="text">
+	    					</div>
+	    				</div>
+	    			</div>
+    			--></div>
+	    	</div>
+        </div>
+        
+
+        
+        <div class="main-container" id="invation-link" style="display:none;">
+	    	<div class="main-head">
+	    		<p>邀请分享</p>
+	    	</div>
+	    	<hr/>
+	        <div class="main-body">
+	        	<div>
+	        		<h2>邀请方法</h2>
+	        		<span>复制下面的地址，通过QQ、空间、微博或邮箱等方式发给您周边的朋友。</span>
+	        		<div id="invatlinks">
+	        			给你推荐一款海外网站加速工具，为科技工作者、海外归国人员、企业团队、外贸工作者提供海外上网服务。<br/>
+						<dl><dt>国外地址：</dt><dd><a id="invat_link_f" target="_blank" href="https://chrome.google.com/webstore/detail/%E5%A3%81%E8%99%8E%E6%BC%AB%E6%AD%A5/iahlmnbegagknnkkldncbplimibpcomf?utm_campaign=en&utm_source=en-et-na-us-oc-webstrhm&utm_medium=et">https://chrome.google.com/webstore/detail/%E5%A3%81%E8%99%8E%E6%BC%AB%E6%AD%A5/iahlmnbegagknnkkldncbplimibpcomf?utm_campaign=en&utm_source=en-et-na-us-oc-webstrhm&utm_medium=et</a></dd></dl>
+						
+						<dl><dt>国内地址：</dt><dd><a target="_blank" id="invat_link"></a></dd></dl>
+	        		</div>
+	        	</div>
+	        	<div>
+	        		<h2>五星推荐</h2>
+	        		<span>如果这款插件帮助到你，请给予五星好评。您的推荐是对开发者的肯定。</span><br/>
+        			<input id="praiseBtn" type="button" value="五星推荐"/>
+	        	</div>
+	        	
+	    	</div>
+        </div>
+        
+        <div class="main-container" id="comment-link" style="display:none;">
+	    	<div class="main-head">
+	    		<p>吐槽墙</p>
+	    	</div>
+	    	<hr/>
+	        <div class="main-body">
+	        	<div class="add-url">
+	    			<input id="comment-text" type="text" style="width: 560px;" placeholder="吐槽一下吧..."/><div id="comment-btn">吐槽一下</div>
+	    			<p class="help">有问题和建议随时反馈，欢迎吐槽！</p>
+	    		</div>
+	    		<div class="comment-list">
+	    			<div class=".no-comment">暂时还没吐槽内容！</div>
+	    			<!--
+	    			<div>
+			    		<dl class="ask">
+			    			<dt>吐槽内容：</dt>
+			    			<dd>有没有搞错a</dd>
+			    			<span>2015-10-8 15:25:12</span>
+			    		</dl>	
+			    		<dl class="answer">
+			    			<dt>回复内容：</dt>
+			    			<dd>有没有搞错a</dd>
+			    			<span>2015-10-8 15:25:12</span>
+			    		</dl>
+			    		<hr/>
+		    		<div>
+		    			
+		    		<div>
+			    		<dl class="ask">
+			    			<dt>吐槽内容：</dt>
+			    			<dd>有没有搞错a</dd>
+			    			<span>2015-10-8 15:25:12</span>
+			    		</dl>	
+			    		<dl class="answer">
+			    			<dt>回复内容：</dt>
+			    			<dd>有没有搞错a</dd>
+			    			<span>2015-10-8 15:25:12</span>
+			    		</dl>
+			    		<hr/>
+		    		<div>
+		    		-->
+	    		</div>
+	    	</div>
+        </div>
+
+          <div class="main-container" id="notice-link" style="display:none;">
+	    	<div class="main-head">
+	    		<p>公告</p>
+	    	</div>
+	    	<hr/>
+	        <div class="main-body">
+	    		<div class="comment-list">
+	    			<div class=".no-comment">暂时还没公告内容！</div>
+	    			<!--
+	    			<div>
+			    		<dl class="ask">
+			    			<dt>吐槽内容：</dt>
+			    			<dd>有没有搞错a</dd>
+			    			<span>2015-10-8 15:25:12</span>
+			    		</dl>	
+			    		<dl class="answer">
+			    			<dt>回复内容：</dt>
+			    			<dd>有没有搞错a</dd>
+			    			<span>2015-10-8 15:25:12</span>
+			    		</dl>
+			    		<hr/>
+		    		<div>
+		    			
+		    		<div>
+			    		<dl class="ask">
+			    			<dt>吐槽内容：</dt>
+			    			<dd>有没有搞错a</dd>
+			    			<span>2015-10-8 15:25:12</span>
+			    		</dl>	
+			    		<dl class="answer">
+			    			<dt>回复内容：</dt>
+			    			<dd>有没有搞错a</dd>
+			    			<span>2015-10-8 15:25:12</span>
+			    		</dl>
+			    		<hr/>
+		    		<div>
+		    		-->
+	    		</div>
+	    	</div>
+        </div>
+
+    </div>
+
+	<div style="display:none">
+    	<div id="editPwd" class="login-form" style="background: none">
+    		<div>
+	        	<p id="password_e_o"><label>旧密码</label></p>
+	        	<input id="oldPwd" type="password" name="oldPwd" placeholder="请输入旧密码"/>
+        	</div>
+        	<div>
+	        	<p id="password_e_n1"><label>新密码</label></p>
+	        	<input id="newPwd1" type="password" name="newPwd1" placeholder="请输入新密码"/>
+        	</div>
+        	<div>
+	        	<p id="account_e_n2"><label>重复新密码</label></p>
+	        	<input id="newPwd2" type="password" name="newPwd2" placeholder="请重新输入新密码"/>
+        	</div>
+        	<div>
+        		<button id="editPwd-btn">
+        			<span>密码重置</span>
+        		</button>
+        	</div>
+    	</div>
+    </div>
+	
+	<div style="display:none">
+		<div id="selectNode" class="login-form" style="background: none">
+    		<div>
+	        	<table style="text-align: center;font-size: 14px;border-collapse:collapse" cellspacing="0" border="1" cellpadding="7">
+	        		<tbody><tr>
+	        			<th width="80px">节点名称</th>
+	        			<th width="100px">所在地</th>
+	        			<th width="50px">速率</th>
+	        			<th style="" width="50px">选择</th>
+	        		</tr>
+	        	</tbody></table>
+        	</div>
+    	</div>
+	</div>
+	
+</div>
+</body>
+</html>

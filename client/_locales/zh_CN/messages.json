@@ -1,0 +1,23 @@
+{
+   "global_direction": {
+      "message": "ltr"
+   },
+   "global_float": {
+      "message": "right"
+   },
+   "global_fontFamily": {
+      "message": "auto"
+   },
+   "global_textAlign": {
+      "message": "left"
+   },
+   "manifest_appDescription": {
+      "message": "壁虎漫步是一款速度最快的海外网站加速插件，可轻松访问google、facebook、twitter、youtube等网站，简单易用的科学上网服务，为国际化的互联网工作者量身打造，一键将网站加入白名单即可。无繁琐配置，即装即用。"
+   },
+   "manifest_appName": {
+      "message": "壁虎漫步"
+   },
+   "manifest_iconTitle": {
+      "message": "[载入中……]"
+   }
+}

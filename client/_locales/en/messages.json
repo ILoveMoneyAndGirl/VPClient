@@ -1,0 +1,23 @@
+{
+   "global_direction": {
+      "message": "ltr"
+   },
+   "global_float": {
+      "message": "right"
+   },
+   "global_fontFamily": {
+      "message": "auto"
+   },
+   "global_textAlign": {
+      "message": "left"
+   },
+   "manifest_appDescription": {
+      "message": "It's for free to use after register"
+   },
+   "manifest_appName": {
+      "message": "壁虎漫步"
+   },
+   "manifest_iconTitle": {
+      "message": "[loading...]"
+   }
+}

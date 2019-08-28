@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://v.fanyue.biz/pay/index?name=1010017806@qq.com -->
+<html ng-app="pay" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}</style>
+
+    <title>VIP充值</title>
+    <link href="assets/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/animate.css" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/goods.css"/>
+
+    <script type="text/javascript" src="assets/libs/jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="assets/libs/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="assets/libs/md5.js"></script>
+    <script type="text/javascript" src="assets/scripts/parameter.js"></script>
+    <script type="text/javascript" src="assets/scripts/common.js"></script>
+     <script type="text/javascript" src="assets/scripts/goods.js"></script>
+
+
+<!--     <script src="assets/scripts/jquery-1.7.2.min.js"></script>
+    <script src="assets/scripts/wow.min.js"></script>
+    <script src="assets/scripts/angular.min.js"></script>
+    <script src="assets/scripts/angular-cookies.js"></script>
+    <script src="assets/scripts/ui-bootstrap-tpls-0.10.0.min.js"></script> -->
+</head>
+
+<body class="pay index page ng-scope" ng-controller="PayController">
+
+<div class="container">
+
+    <div class="text-center">
+        <small class="account">账号：1010017806@qq.com</small>
+    </div>
+
+    <h2>请挑选你所需要的套餐</h2>
+
+    <div class="row plans" id="goods-content">
+<!--         <div class="col-xs-4">
+            <div class="card">
+                <h3>体验会员</h3>
+                <span class="price">
+                    <small>￥</small>
+                    10
+                </span>
+               <h1 class="duration">365天</h1>
+
+                <p class="pay btn btn-block btn-primary">
+                    <a ng-click="choosePlan(1, $event)" target="_blank" href="http://v.fanyue.biz/pay/alipay?name=1010017806@qq.com&amp;trade_type=1&amp;coupon_code="><font color="#FFFFFF">支付宝支付</font></a> | <a ng-click="choosePlan(1, $event)" target="_blank" href="http://v.fanyue.biz/pay/transfer?name=1010017806@qq.com&amp;trade_type=1&amp;coupon_code="><font color="#FFFFFF">微信支付</font></a>
+                    <i class="glyphicon glyphicon-chevron-right pull-right" style="margin-right:20px;margin-top: 3px;margin-left: -50px;"></i>
+                </p>
+                
+                <hr>
+                <ul>
+                    <li>
+                        <i class="glyphicon glyphicon-ok text-success"></i>
+                        <span tooltip="可将任何网站加入科学上网列表" class="ng-scope">
+                            不限制使用的域名
+                        </span>
+                    </li>
+                    <li>
+                        <i class="glyphicon glyphicon-ok text-success"></i>
+                        <span tooltip="开启后，上任何网站都使用翻越" class="ng-scope">
+                            开放“一直”模式
+                        </span>
+                    </li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xs-4">
+            <div class="card suggest">
+
+                <h3>年费会员</h3>
+                <span class="price">
+                    <small>￥</small>
+                    200
+                </span>
+                <small class="duration">365天</small>
+
+                <p class="pay btn btn-block btn-success">
+                    <a ><font color="#FFFFFF">支付宝支付</font></a> | <a><font color="#FFFFFF">微信支付</font></a>
+                    <i class="glyphicon glyphicon-chevron-right pull-right" style="margin-right:20px;margin-top: 3px;margin-left: -50px;"></i>
+                </p>
+
+                <hr>
+                <ul>
+                    <li>
+                        <i class="glyphicon glyphicon-ok text-success"></i>
+                        <span tooltip="可将任何网站加入科学上网列表" class="ng-scope">
+                            不限制使用的域名
+                        </span>
+                    </li>
+                    <li>
+                        <i class="glyphicon glyphicon-ok text-success"></i>
+                        <span tooltip="开启后，上任何网站都使用翻越" class="ng-scope">
+                            开放“一直”模式
+                        </span>
+                    </li>
+                    <li>
+                        <i class="glyphicon glyphicon-ok text-success"></i>
+                        <span tooltip="严格限定单台服务器用户数，保证服务器有大量的空闲带宽" class="ng-scope">
+                            <b>限量专属服务器</b>
+                        </span>　
+                    </li>
+                    <li>
+                        &nbsp;
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xs-4">
+            <div class="card">
+                <span class="label label-info">最多人的选择</span>
+
+                <h3>月费会员</h3>
+                <span class="price">
+                    <small>￥</small>
+                    40
+                </span>
+                <small class="duration">30天</small>
+
+                <p class="pay btn btn-block btn-primary">
+                    <a ng-click="choosePlan(30, $event)" target="_blank" href="http://v.fanyue.biz/pay/alipay?name=1010017806@qq.com&amp;trade_type=30&amp;coupon_code="><font color="#FFFFFF">支付宝支付</font></a> | <a ng-click="choosePlan(30, $event)" target="_blank" href="http://v.fanyue.biz/pay/transfer?name=1010017806@qq.com&amp;trade_type=30&amp;coupon_code="><font color="#FFFFFF">微信支付</font></a>
+                    <i class="glyphicon glyphicon-chevron-right pull-right" style="margin-right:20px;margin-top: 3px;margin-left: -50px;"></i>
+                </p>
+
+                <hr>
+                <ul>
+                    <li>
+                        <i class="glyphicon glyphicon-ok text-success"></i>
+                        <span tooltip="可将任何网站加入科学上网列表" class="ng-scope">
+                            不限制使用的域名
+                        </span>
+                    </li>
+                    <li>
+                        <i class="glyphicon glyphicon-ok text-success"></i>
+                        <span tooltip="开启后，上任何网站都使用翻越" class="ng-scope">
+                            开放“一直”模式
+                        </span>
+                    </li>
+                    <li>
+                        <i class="glyphicon glyphicon-ok text-success"></i>
+                        <span tooltip="严格限定单台服务器用户数，保证服务器有大量的空闲带宽" class="ng-scope">
+                            <b>限量专属服务器</b>
+                        </span>　
+                    </li>
+                    <li>&nbsp;</li>
+                </ul>
+
+            </div>
+        </div> -->
+        正在加载 请稍后。。。。
+    </div>
+
+    <div class="alert alert-info text-center" style="margin-top: -3px;">
+        极限冲浪 ★ 不限流量 ★ 付费后自动开通
+    </div>
+
+
+<!--     <div class="back display" id="pop">
+        <div  style="text-align:center;　margin: 20% auto;border-radius: 0.5rem;z-index: 1;">
+            <div style="text-align:center;height: 4rem;line-height: 4rem;font-size: 0.8rem;">扫描下图二维码</div>
+            <div >
+                <img id="qrcode" />
+                <span>
+              <div class="cancel fl pop_select">取消扫描</div>
+              <div class="sure fl pop_select">已完成扫描</div>                </span>
+
+            </div>
+
+        </div>
+    </div> -->
+
+       <div class="backxx displayxx" id="pop">
+        <div class="pop_contentxx">
+            <div class="confirmxx">扫描下图二维码</div>
+            <div class="">
+                <img id="qrcode" height="300" width="300"/>
+              <a class="cancelxx  pop_selectxx">取消扫描</a>
+              <a class="surexx  pop_selectxx">已完成扫描</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body></html>
